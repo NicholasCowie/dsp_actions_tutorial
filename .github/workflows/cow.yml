@@ -13,4 +13,6 @@ jobs:
     - name: run-cowpy-cmd
       run: cowpy -c tux hi there
     - name: get-wd
-      run: pwd
+      run: | 
+        pwd
+        ls -l
