@@ -14,6 +14,6 @@ jobs:
       run: cowpy -c tux hi there
     - name: clone-repo
       run: |
-       git clone git@github.com:NicholasCowie/dsp_actions_tutorial.git
+       git clone https://github.com/NicholasCowie/dsp_actions_tutorial.git
        cd dsp_actions_tutorial/scripts
        python3 cow.py
