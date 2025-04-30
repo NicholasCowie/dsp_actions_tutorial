@@ -10,5 +10,7 @@ jobs:
     steps:
     - name: install-cowpy
       run: pip install cowpy
-    - name: run-cowpy
+    - name: run-cowpy-cmd
       run: cowpy -c tux hi there
+    - name: get-wd
+      run: pwd
