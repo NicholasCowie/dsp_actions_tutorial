@@ -12,6 +12,8 @@ jobs:
       run: pip install cowpy
     - name: run-cowpy-cmd
       run: cowpy -c tux hi there
-    - name: run-cowpy-script
-      working-directory: ./../scripts
-      run: python3 cow.py
+    - name: clone-repo
+      run: |
+       git clone git@github.com:NicholasCowie/dsp_actions_tutorial.git
+       cd dsp_actions_tutorial/scripts
+       python3 cow.py
