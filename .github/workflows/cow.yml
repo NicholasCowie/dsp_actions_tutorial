@@ -5,10 +5,10 @@ on:
   push:
 
 jobs:
-  install-cowstar:
+  install-cowpy:
     runs-on: ubuntu-latest
     steps:
     - name: install-cowpy
-      run: pip install cowsay
+      run: pip install cowpy
     - name: run-cowpy
       run: cowpy -c tux hi there
