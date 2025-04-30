@@ -12,7 +12,6 @@ jobs:
       run: pip install cowpy
     - name: run-cowpy-cmd
       run: cowpy -c tux hi there
-    - name: get-wd
-      run: | 
-        pwd
-        ls -l
+    - name: run-cowpy-script
+      working-directory: ./../scripts
+      run: python3 cow.py
