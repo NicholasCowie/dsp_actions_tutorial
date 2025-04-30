@@ -1,0 +1,14 @@
+
+name: cowpy exmaple
+
+on:
+  push:
+
+jobs:
+  install-cowstar:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install-cowpy
+      run: pip install cowsay
+    - name: run-cowpy
+      run cowpy -c tux hi there
