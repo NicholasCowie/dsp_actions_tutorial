@@ -11,4 +11,4 @@ jobs:
     - name: install-cowpy
       run: pip install cowsay
     - name: run-cowpy
-      run cowpy -c tux hi there
+      run: cowpy -c tux hi there
